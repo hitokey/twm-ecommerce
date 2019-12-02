@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>TWM Store</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/cadastro.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark py-3">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">TWM<span style="font-size: 0.9rem;">Store</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="my-2 my-lg-0 mx-auto" style="min-width: 500px;">
+            <input class="form-control w-100 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </div>
+          <ul id="lista-navbar" class="navbar-nav align-items-lg-center flex-nowrap">
+            <li class="nav-item active">
+              <a class="nav-link d-flex align-items-center" href="#">
+                <img src="./assets/man-user.svg" class="mr-2" alt="">
+                <span>Entre ou <br>cadastre-se</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" href="#">
+                <img src="./assets/favorite-heart-button.svg" class="mr-2" alt="">
+                <span class="d-lg-none d-block">Favoritos</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" href="#">
+                <img src="./assets/Carinho.svg" class="mr-2" alt="">
+                <span class="d-lg-none d-block">Carrinho</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-lg-6 border-right">
+        <div class="title">
+          <h1>Já possui cadastro?</h1>
+          <h2>Então faça login!</h2>
+        </div>
+
+        <div class="mt-4">
+          <form>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input name="email" type="email" id="email" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label for="senha">Senha</label>
+              <input name="senha" type="password" id="senha" class="form-control">
+            </div>
+
+            <div class="form-group text-right">
+              <button type="submit" class="btn btn-blue px-5">Entrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mt-lg-0 mt-4">
+        <div class="title">
+          <h1>Ainda não possui uma conta?</h1>
+          <h2>Crie uma conta rápida e fácil abaixo!</h2>
+        </div>
+
+        <div class="mt-4">
+          <form class="form-row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="nome">Nome</label>
+                <input name="nome" type="text" id="nome" class="form-control">
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="sobrenome">Sobrenome</label>
+                <input name="sobrenome" type="text" id="sobrenome" class="form-control">
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="cpf">CPF</label>
+                <input name="cpf" type="text" id="cpf" class="form-control">
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="nascimento">Data de nascimento</label>
+                <input name="dataNascimento" type="date" id="nascimento" class="form-control">
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="cep">CEP</label>
+                <input name="cep" type="text" id="cep" class="form-control">
+              </div>
+            </div>
+
+            <div class="col-lg-10">
+              <div class="form-group">
+                <label for="logradouro">Logradouro</label>
+                <input name="logradouro" type="text" id="logradouro" class="form-control">
+              </div>
+            </div>
+
+            <div class="col-lg-2">
+              <div class="form-group">
+                <label for="numero">Número</label>
+                <input name="numero" type="text" id="numero" class="form-control">
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="bairro">Bairro</label>
+                <input name="bairro" type="text" id="bairro" class="form-control">
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="complemento">Complemento</label>
+                <input name="complemento" type="text" id="complemento" class="form-control">
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="cidade">Cidade</label>
+                <input name="cidade" type="text" id="cidade" class="form-control">
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="estado">Estado</label>
+                <input name="estado" type="text" id="estado" class="form-control">
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-group">
+                <label for="emailNovo">E-mail</label>
+                <input name="email" type="email" id="emailNovo" class="form-control">
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="senhaNovo">Senha</label>
+                <input name="senha" type="password" id="senhaNovo" class="form-control">
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="confirmaSenhaNovo">Confirmar senha</label>
+                <input name="confirmaSenha" type="password" id="confirmaSenhaNovo" class="form-control">
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-group text-right">
+                <button class="btn btn-blue px-5">Cadastrar-se</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
