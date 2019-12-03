@@ -1,90 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
-
 body {
+  background: #ededed;
   font-family: "Quicksand", sans-serif;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: bold;
+p {
+  margin: 0;
 }
 
-#lista-navbar li a {
-  text-transform: uppercase;
-  font-size: 0.6rem;
-}
-
-.btn {
-  border-radius: 11px;
-  text-transform: uppercase;
-}
-
-.btn-blue {
-  color: #fff;
-  background-color: #004ca2;
-  border-color: #004ca2;
-}
-
-.btn-blue:hover {
-  color: #fff;
-  background-color: rgb(31, 99, 177);
-  border-color: rgb(11, 87, 174);
-}
-
-.btn-blue:focus,
-.btn-blue.focus {
-  color: #fff;
-  background-color: rgb(31, 99, 177);
-  border-color: rgb(11, 87, 174);
-  box-shadow: 0 0 0 0.2rem rgba(31, 99, 177, 0.5);
-}
-
-.card-produto {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  padding: 1rem;
-  border-radius: 18px;
-}
-
-.card-produto p {
-  text-align: left;
-  color: #303030 !important;
-}
-
-.form-control {
-  border-radius: 11px;
-}
-
-.form-control:focus {
-  box-shadow: 0 0 0 0.2rem rgba(128, 177, 233, 0.5);
+.btn:focus {
+  box-shadow: none;
 }
 
 .hand-over:hover {
   cursor: pointer;
 }
 
-.navbar {
-  background: #004ca2;
-}
-
-.navbar-brand {
-  font-size: 2rem;
-}
-
-.produto-nome {
-  font-weight: normal;
-  font-size: 1rem;
-}
-
-.produto-valor {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.produto-parcelado {
-  font-weight: normal;
-  font-size: 0.7rem;
-}
-
-.shadow {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) !important;
+::selection {
+  background: #707070;
+  color: #fff;
 }
