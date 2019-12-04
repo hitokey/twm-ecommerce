@@ -1,3 +1,9 @@
+#nome-principal {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
 #preco-principal {
   font-size: 2rem;
   position: absolute;
@@ -11,12 +17,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#nome-principal {
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
 }
 
 .bg-1 {
@@ -42,21 +42,6 @@
 .imagem-produto {
   width: 80%;
   transition: all 0.3s;
-}
-
-.left-bar {
-  width: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: width 0.3s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  background: #ededed;
-  height: 100vh;
 }
 
 .nav-pills .nav-link {
@@ -93,9 +78,9 @@
   font-size: 1.4rem;
   position: absolute;
   width: 3.5rem;
+  height: 3.5rem;
   top: 0;
   left: 20px;
-  height: 3.5rem;
   background: rgba(0, 0, 0, 0.16);
   border-radius: 50%;
   color: #fff;
@@ -139,23 +124,40 @@
   cursor: pointer;
 }
 
-.right-bar {
-  width: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: width 0.3s;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 5;
-  background: #ededed;
-  height: 100vh;
-}
-
 @media (max-width: 992px) {
+  #nome-principal {
+    position: relative;
+    bottom: auto;
+    right: auto;
+  }
+
+  #preco-principal {
+    top: 1rem;
+    left: 20px;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.4rem;
+  }
+
   #tela-principal {
     flex-direction: column;
+  }
+
+  .preco-produto {
+    top: 1rem;
+  }
+
+  .produto-principal {
+    height: 40vh;
+  }
+
+  .produto img,
+  .produto-principal img {
+    width: 70%;
+  }
+
+  .nome-produto,
+  .preco-produto {
+    opacity: 1 !important;
   }
 }
