@@ -1,0 +1,166 @@
+#nome-principal {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  color: #000;
+}
+
+#preco-principal {
+  font-size: 2rem;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 6rem;
+  height: 6rem;
+  background: #92b6cc;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-1 {
+  background: #b6e4fb;
+}
+
+.bg-2 {
+  background: #d7c4eb;
+}
+
+.bg-3 {
+  background: #ffeeb1;
+}
+
+.bg-4 {
+  background: #f3f3f5;
+}
+
+.bg-5 {
+  background: #ffced3;
+}
+
+.imagem-produto {
+  width: 80%;
+  transition: all 0.3s;
+}
+
+.nav-pills .nav-link {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  padding: 0;
+  margin: 0 15px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s, border 0.3s;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: transparent;
+  border-bottom: 2px solid #ae94c6;
+  color: #ae94c6;
+}
+
+.nome-produto {
+  opacity: 0;
+  transition: 0.3s all;
+  color: #000;
+}
+
+.opcoes {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.preco-produto {
+  font-size: 1.4rem;
+  position: absolute;
+  width: 3.5rem;
+  height: 3.5rem;
+  top: 0;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.16);
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.produto {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.produto:hover img {
+  width: 70%;
+}
+
+.produto:hover .preco-produto {
+  top: 1rem;
+}
+
+.produto:hover .nome-produto,
+.produto:hover .preco-produto {
+  opacity: 1;
+}
+
+.produto-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.produto:hover,
+.produto-principal:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  #nome-principal {
+    position: relative;
+    bottom: auto;
+    right: auto;
+  }
+
+  #preco-principal {
+    top: 1rem;
+    left: 20px;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.4rem;
+  }
+
+  #tela-principal {
+    flex-direction: column;
+  }
+
+  .preco-produto {
+    top: 1rem;
+  }
+
+  .produto-principal {
+    height: 40vh;
+  }
+
+  .produto img,
+  .produto-principal img {
+    width: 70%;
+  }
+
+  .nome-produto,
+  .preco-produto {
+    opacity: 1 !important;
+  }
+}
