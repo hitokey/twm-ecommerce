@@ -1,0 +1,47 @@
+#input-busca {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  background: url("../assets/search.svg") no-repeat center right;
+  background-size: 20px;
+  background-position-x: calc(100% - 20px);
+  padding-right: 50px;
+}
+
+#input-busca:focus {
+  border-bottom: 1px solid #707070;
+}
+
+.marca-produto {
+  font-size: 1.2rem;
+}
+
+.nome-produto {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.preco-produto {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.produto {
+  background: #fafafa;
+}
+
+.select-busca {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  background-size: 20px;
+}
+
+.select-busca option {
+  background: #ededed;
+  border: none;
+}

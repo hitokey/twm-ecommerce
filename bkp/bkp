@@ -1,0 +1,37 @@
+#|
+<---        <div class=\"col-lg-4 mt-4\">
+          <select class=\"select-busca\" id=\"select01\">
+            <option value=\"\" selected>Tamanho</option>
+            <option value=\"32\">32</option>
+            <option value=\"33\">33</option>
+            <option value=\"34\">34</option>
+            <option value=\"35\">35</option>
+            <option value=\"37\">37</option>
+            <option value=\"38\">38</option>
+            <option value=\"39\">39</option>
+            <option value=\"40\">40</option>
+            <option value=\"41\">41</option>
+            <option value=\"42\">42</option>
+	    <option value=\"P\">P</option>
+            <option value=\"M\">M</option>
+            <option value=\"G\">G</option>
+
+          </select>
+        </div>
+         
+        <div class=\"col-lg-4 mt-4\">
+          <select class=\"select-busca\" id=\"select02\">
+            <option value=\"\" selected>Cor</option>
+            <option value=\"Preto\">Preto</option>
+            <option value=\"Marrom\">Marrom</option>
+            <option value=\"Vermelho\">Vermelho</option>
+            <option value=\"Azul\">Azul</option>
+          </select>
+        </div> --->
+
+        var x = document.getElementById(\"select01\");
+	var vx = x.options[x.selectedIndex].value; 
+	var y = document.getElementById(\"select02\");
+	var vy = y.options[x.selectedIndex].value;
+
+#|

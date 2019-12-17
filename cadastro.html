@@ -55,14 +55,13 @@
           <div class="card shadow p-4">
             <h1 class="text-center">Cadastre-se!</h1>
             <h2 class="text-center">Coloque aqui suas informações para conseguir acessar ao site</h2>
-            <form class="form-row mt-4">
+            <form class="form-row mt-4" action="./cadastro.rkt" method="post">
               <div class="col-lg-6">
                 <div class="form-group">
                   <label for="nome">Nome</label>
                   <input type="text">
                 </div>
               </div>
-
               <div class="col-lg-6">
                 <div class="form-group">
                   <label for="sobrenome">Sobrenome</label>
@@ -91,7 +90,7 @@
                 </div>
               </div>
               <div class="col-12 mt-5 text-center">
-                <button type="submit" class="btn btn-link-login">Cadastrar</button>
+		<button type="submit" class="btn btn-link-login">Cadastrar</button>
               </div>
             </form>
           </div>
@@ -116,6 +115,21 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script>
+
+        
+    function myBusca()
+    {
+	var x = document.getElementById("select01");
+	var vx = x.options[x.selectedIndex].value; 
+	var y = document.getElementById("select02");
+	var vy = y.options[x.selectedIndex].value;
+	var input = document.getElementById("input-busca").value;
+	x = "busca.html"
+	url = input.concat(";",vy,"/",vx);
+	x = x.concat("?",url);
+	location.href = x
+    }
+    
     $("#left-bar-menu").click(() => {
       if ($(".left-bar").hasClass("left-0")) {
         $(".left-bar").removeClass("left-0");
