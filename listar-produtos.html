@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TWM Store</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/listar-produto.css">
+</head>
+
+<body>
+  <div id="tela-principal" class="container p-4 d-flex flex-column align-items-center" style="min-height: 100vh;">
+    <h1>Produtos</h1>
+
+    <div class="table-responsive mt-4">
+      <table class="table table-hover">
+        <thead>
+          <th>Nome</th>
+          <th>Categoria</th>
+          <th>Preço</th>
+          <th class="text-center">Qtd</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Produto 1</td>
+            <td>Sapato</td>
+            <td>$ 99,00</td>
+            <td align="center">4</td>
+          </tr>
+          <tr>
+            <td>Produto 2</td>
+            <td>Sapato</td>
+            <td>$ 99,00</td>
+            <td align="center">4</td>
+          </tr>
+          <tr>
+            <td>Produto 3</td>
+            <td>Sapato</td>
+            <td>$ 99,00</td>
+            <td align="center">4</td>
+          </tr>
+          <tr>
+            <td>Produto 4</td>
+            <td>Sapato</td>
+            <td>$ 99,00</td>
+            <td align="center">4</td>
+          </tr>
+          <tr>
+            <td>Produto 5</td>
+            <td>Sapato</td>
+            <td>$ 99,00</td>
+            <td align="center">4</td>
+          </tr>
+          <tr>
+            <td>Produto 6</td>
+            <td>Sapato</td>
+            <td>$ 99,00</td>
+            <td align="center">4</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script>
+    let valor = 99;
+    $("#diminuirQtd").click(() => {
+      let novaQtd = parseInt($("#quantidade").text()) - 1;
+      let novoValor = valor * novaQtd;
+
+      if (novaQtd >= 1) {
+        $("#quantidade").text(novaQtd);
+        $(".valor").text(novoValor);
+      }
+    });
+
+    $("#aumentarQtd").click(() => {
+      let novaQtd = parseInt($("#quantidade").text()) + 1;
+      let novoValor = valor * novaQtd;
+
+      $("#quantidade").text(novaQtd);
+      $(".valor").text(novoValor);
+    });
+
+    $("#left-bar-menu").click(() => {
+      if ($(".left-bar").hasClass("left-0")) {
+        $(".left-bar").removeClass("left-0");
+        $(".left-bar").removeClass("top-0");
+      }
+      else {
+        $(".left-bar").addClass("left-0");
+        $(".left-bar").addClass("top-0");
+      }
+    });
+  </script>
+</body>
