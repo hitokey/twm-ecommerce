@@ -1,0 +1,40 @@
+button#finalizar-pedido {
+  border: 0.5px solid #707070;
+  background: none;
+  padding: 1rem;
+  transition: 0.3s all;
+  outline: 0 !important;
+}
+
+button#finalizar-pedido:hover {
+  background: #707070;
+  color: #fff;
+}
+
+input {
+  width: 300px;
+  padding: 0.5rem;
+  background: none;
+  border: 1px solid #707070;
+}
+
+.btn-link-login {
+  color: #707070;
+  transition: all 0.3s;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0;
+}
+
+.btn-link-login:hover {
+  color: #ae94c6;
+}
+
+.content {
+  margin: 0 0 0 100px;
+}
+
+.produto {
+  background: #fafafa;
+}
