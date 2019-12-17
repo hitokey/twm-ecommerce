@@ -8,9 +8,9 @@
 
 
 (define (cnn)
-  (mysql-connect #:user "strue028_hito"
-                 #:database "strue028_twm"
-                 #:password "ama12345"
+  (mysql-connect #:user "user"
+                 #:database "passowd"
+                 #:password "12345"
                  #:port 3306))
 
 
